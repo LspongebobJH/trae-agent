@@ -17,7 +17,7 @@ from docker.errors import ImageNotFound
 from docker.models.containers import Container
 from tqdm import tqdm
 
-from .utils import BENCHMARK_CONFIG, docker_exec
+from utils import BENCHMARK_CONFIG, docker_exec
 
 
 class BenchmarkEvaluation:
@@ -69,7 +69,7 @@ class BenchmarkEvaluation:
         self.run_id = run_id
         self.max_workers = max_workers
         if instance_ids is None:
-            instance_ids = [instance["instance_id"] for instance in self.dataset]
+            self.instance_ids = [instance["instance_id"] for instance in self.dataset]
         else:
             self.instance_ids = instance_ids
 
