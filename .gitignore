@@ -175,7 +175,8 @@ cython_debug/
 
 trae-config-local.json
 trae_config.json
-trae_config.yaml
+# trae_config.yaml
+# Jiahang (debug): comment out temporarily
 
 # Trajectories
 /trajectories/
