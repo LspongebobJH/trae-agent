@@ -187,3 +187,6 @@ trae_config.json
 
 # Patch selection python binary
 py312/
+
+evaluation/trae-workspace/
+evaluation/results/

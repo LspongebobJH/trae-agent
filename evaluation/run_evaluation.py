@@ -153,7 +153,7 @@ class BenchmarkEvaluation:
         except Exception:
             image = self.docker_client.images.pull("ubuntu:22.04")
 
-        repo_root_path = Path(__file__).parent.parent
+        repo_root_path = Path(__file__).absolute().parent.parent
         assert (repo_root_path / "trae_agent" / "__init__.py").is_file()
 
         container = self.docker_client.containers.run(
